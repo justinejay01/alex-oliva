@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1: Healthy Habits - Fitness for Lifelong Learning</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5e6d3;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+        }
+
+        /* h1 {
+            font-family: "Footlight MT", "Times New Roman", serif;
+        } */
+
+        /* Header */
+        .header {
+            background-color: #f5e6d3;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 2px solid #8db38d;
+        }
+
+        .header-title {
+            font-family: "Footlight MT", "Times New Roman", serif;
+            font-size: 1.5rem;
+            color: #2c2c2c;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        /* Custom Navigation */
+        .custom-navbar {
+            background-color: #8db38d;
+            padding: 0;
+        }
+
+        .nav-link#nav-tab {
+            color: white !important;
+            font-weight: bold;
+            font-size: 1.125rem;
+            padding: 1rem 2rem !important;
+            text-align: center;
+            border-right: 1px solid rgba(255, 255, 255, 0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-link#nav-tab:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white !important;
+        }
+
+        .nav-item:last-child .nav-link {
+            border-right: none;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background-color: #a8d4a8;
+            min-height: 100%;
+            padding: 2rem 1.5rem;
+        }
+
+        .lesson-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c2c2c;
+            margin-bottom: 1.5rem;
+        }
+
+        .lesson-section {
+            display: block;
+            color: #d4a333;
+            text-decoration: none;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(212, 163, 51, 0.3);
+            transition: color 0.3s ease;
+        }
+
+        .lesson-section:hover {
+            color: #b8921a;
+        }
+
+        .lesson-section.active {
+            color: #b8921a;
+            font-weight: bold;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem;
+            background-color: #f5e6d3;
+            min-height: calc(100vh - 140px);
+        }
+
+        .content-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c2c2c;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .instructions {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 2rem;
+        }
+
+        .riddle-list {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 2rem;
+        }
+
+        .riddle-item {
+            margin-bottom: 0.5rem;
+        }
+
+        .guide-question {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #444;
+            margin-bottom: 1.5rem;
+        }
+
+        .answer-space {
+            background-color: white;
+            border: 2px solid #8db38d;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            min-height: 120px;
+            width: 100%;
+            font-size: 1rem;
+            resize: vertical;
+        }
+
+        .answer-space:focus {
+            outline: none;
+            border-color: #6a9f6a;
+            box-shadow: 0 0 0 0.2rem rgba(141, 179, 141, 0.25);
+        }
+
+        #btn-green {
+            background-color: #8db38d;
+
+        }
+
+        .bg-ygreen {
+            background-color: #EAFFCF;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .nav-link {
+                font-size: 1rem;
+                padding: 0.875rem 1rem !important;
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            }
+
+            .nav-item:last-child .nav-link {
+                border-bottom: none;
+            }
+
+            .header-title {
+                font-size: 1.2rem;
+            }
+
+            .sidebar {
+                min-height: auto;
+                padding: 1.5rem 1rem;
+            }
+
+            .main-content {
+                padding: 1.5rem 1rem;
+            }
+
+            .lesson-title {
+                font-size: 1.3rem;
+            }
+
+            .content-title {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1 class="header-title">Fitness for Lifelong Learning Through Electronic and Exploration</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md custom-navbar">
+        <div class="container-fluid px-0">
+            <div class="navbar-nav w-100 d-flex flex-md-row">
+                <div class="nav-item flex-fill">
+                    <a class="nav-link" id="nav-tab" href="index.html">HOME</a>
+                </div>
+                <div class="nav-item flex-fill dropdown">
+                    <a class="nav-link" id="nav-tab" href="#" role="button" data-bs-toggle="dropdown">TOPICS</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="lesson-1.html">Lesson 1: Healthy Habits</a></li>
+                        <li><a class="dropdown-item" href="#">Lesson 2: Individual & Dual Sports</a></li>
+                        <li><a class="dropdown-item" href="#">Lesson 3: Team Sports</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Layout -->
+    <div class="container-fluid p-0">
+        <div class="row g-0" style="height: 100%;">
+            <!-- Sidebar -->
+            <div class="col-lg-4 col-xl-4">
+                <aside class="sidebar">
+                    <p><strong>Learning Objectives</strong></p>
+                    <ul>
+                        <li><strong>Explains the importance of practicing a healthy lifestyle.
+                                (<em>P8PH-Ia-20)</em></strong></li>
+                        <li><strong>Identifies healthful practices that help prevent lifestyle diseases.
+                                (<em>P8PH-Ib-21)</em></strong></li>
+                        <li><strong>Applies decision-making skills in creating a personal health and fitness plan for
+                                individual/dual sports.</strong><em> (<strong>P8IS-If-25</strong></em><strong>)</strong>
+                        </li>
+                    </ul>
+                    <h2 class="lesson-title">Lesson 1: Healthy Habits</h2>
+                    <nav class="nav nav-tabs flex-column">
+                        <a class="lesson-section active" data-bs-toggle="tab" href="#tab1">Establishing Lesson
+                            Purpose</a>
+                        <a class="lesson-section" data-bs-toggle="tab" href="#tab2">Introducing Content</a>
+                        <a class="lesson-section" data-bs-toggle="tab" href="#tab3">Developing Understanding</a>
+                        <a class="lesson-section" data-bs-toggle="tab" href="#tab4">Application of Safety Precaution</a>
+                        <a class="lesson-section" data-bs-toggle="tab" href="#tab5">Fulfillment of Activity</a>
+                        <a class="lesson-section" data-bs-toggle="tab" href="#tab6">Evaluating Learning</a>
+                    </nav>
+                </aside>
+            </div>
+
+            <div class="col-lg-8 col-xl-8">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="tab1">
+                        <main class="main-content">
+                            <h1 class="content-title">Establishing Lesson Purpose</h1>
+
+                            <div class="instructions">
+                                <strong>Instructions:</strong> Read each riddle carefully and write your answer on the
+                                space
+                                provided. After answering, respond to the guide question.
+                            </div>
+
+                            <div class="riddle-list">
+                                <div class="riddle-item"><strong>1.</strong> I'm red or green, juicy and sweet. Doctors
+                                    say one
+                                    of me a day is neat.</div>
+                                <div class="riddle-item"><strong>2.</strong> Clear and cool, I quench your thirst.
+                                    Without me,
+                                    your health is the worst.</div>
+                                <div class="riddle-item"><strong>3.</strong> I come at night and give you rest. With
+                                    enough of
+                                    me, you'll feel your best.</div>
+                                <div class="riddle-item"><strong>4.</strong> Move your body, stretch and run. I keep you
+                                    healthy
+                                    while having fun.</div>
+                                <div class="riddle-item"><strong>5.</strong> Too much of me makes you frown. Manage me
+                                    well,
+                                    don't let me bring you down.</div>
+                            </div>
+
+                            <p><strong>Guide Question:</strong> Which riddle (habit) do you think is most important for
+                                you
+                                right
+                                now and why? Write 2&ndash;3 sentences.</p>
+
+                        </main>
+                    </div>
+                    <div class="tab-pane fade" id="tab2">
+                        <main class="main-content">
+                            <h1 class="content-title">Introducing Content</h1>
+
+                            <!-- Activity A -->
+                            <div class="mb-2">
+                                <div class="">
+                                    <strong>A. Activity: “Complete the Table”</strong>
+                                </div>
+                                <div class="">
+                                    <p>Instructions: Fill in the table below by writing the habit mentioned in the
+                                        riddles and its importance to health.</p>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered align-middle">
+                                            <thead class="table-secondary">
+                                                <tr>
+                                                    <th scope="col">Riddle No.</th>
+                                                    <th scope="col">Healthy Habit</th>
+                                                    <th scope="col">Why is it important?</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Eating Fruits (Apple)</td>
+                                                    <td><textarea class="form-control"
+                                                            placeholder="Enter importance"></textarea></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>Drinking Water</td>
+                                                    <td><textarea class="form-control"
+                                                            placeholder="Enter importance"></textarea></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3</td>
+                                                    <td>Sleeping Enough</td>
+                                                    <td><textarea class="form-control"
+                                                            placeholder="Enter importance"></textarea></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4</td>
+                                                    <td>Exercising</td>
+                                                    <td><textarea class="form-control"
+                                                            placeholder="Enter importance"></textarea></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Managing Stress</td>
+                                                    <td><textarea class="form-control"
+                                                            placeholder="Enter importance"></textarea></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Activity B -->
+                            <div class="mb-3">
+                                <div class="">
+                                    <strong>B. Activity: “Rank the Habits”</strong>
+                                </div>
+                                <div class="">
+                                    <p>Instructions: Rank the five habits from 1 (most important for you right now) to 5
+                                        (least important for you right now). After ranking, write 2–3 sentences
+                                        explaining why you chose your top habit.</p>
+
+                                    <form>
+
+                                        <div class="mb-3">
+                                            <textarea class="form-control" rows="6"
+                                                placeholder="Write your answers here..."></textarea>
+                                        </div>
+                                        <button type="submit" class="btn text-white w-100" id="btn-green">Submit
+                                            Answers</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                    <div class="tab-pane fade" id="tab3">
+                        <main class="main-content">
+                            <h1 class="content-title">Developing Understanding</h1>
+
+                            <h2 class="text-center mb-5">Healthy Lifestyle</h2>
+
+                            <!-- Introduction -->
+                            <div class="mb-4">
+                                <div class="">
+                                    <p class="lead">
+                                        A healthy lifestyle refers to making conscious choices every day that contribute
+                                        to physical, mental, and emotional well-being.
+                                        It is not limited to avoiding illness but focuses on maintaining balance and
+                                        vitality in daily life.
+                                        This includes eating nutritious foods, staying physically active, having enough
+                                        sleep, and practicing stress management.
+                                        By adopting healthy habits, individuals can improve their overall quality of
+                                        life and prevent long-term health risks.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Components -->
+                            <div class="card mb-4">
+                                <div class="card-header text-dark bg-ygreen">
+                                    <h4 class="mb-0">Components of a Healthy Lifestyle</h4>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>Balanced diet and proper nutrition:</strong>
+                                            Eating a variety of foods rich in vitamins, minerals, and essential
+                                            nutrients helps fuel the body and supports growth and repair.</li>
+                                        <li class="list-group-item"><strong>Regular physical activity:</strong> Exercise
+                                            strengthens the heart, muscles, and bones while improving endurance,
+                                            flexibility, and coordination.</li>
+                                        <li class="list-group-item"><strong>Adequate sleep:</strong> Resting 7–9 hours
+                                            every night allows the body to recharge, supports memory, and enhances
+                                            concentration.</li>
+                                        <li class="list-group-item"><strong>Good personal hygiene:</strong> Proper
+                                            hygiene practices such as handwashing and dental care help prevent
+                                            infections and diseases.</li>
+                                        <li class="list-group-item"><strong>Stress management and relaxation:</strong>
+                                            Taking time for hobbies, meditation, or simple breathing exercises lowers
+                                            stress and improves emotional well-being.</li>
+                                        <li class="list-group-item"><strong>Avoiding harmful habits:</strong> Limiting
+                                            or avoiding smoking, excessive alcohol, and junk food reduces the risk of
+                                            chronic diseases.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Benefits -->
+                            <div class="card mb-4">
+                                <div class="card-header text-dark bg-ygreen">
+                                    <h4 class="mb-0">Benefits of a Healthy Lifestyle</h4>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>Stronger immune system:</strong> Healthy
+                                            eating and exercise boost the body’s defense against illnesses.</li>
+                                        <li class="list-group-item"><strong>Better focus and productivity:</strong>
+                                            Proper rest and nutrition improve mental clarity and efficiency in studies
+                                            and work.</li>
+                                        <li class="list-group-item"><strong>Improved mood and mental health:</strong>
+                                            Exercise and good sleep reduce anxiety and depression while promoting
+                                            positive feelings.</li>
+                                        <li class="list-group-item"><strong>Reduced risk of chronic diseases:</strong> A
+                                            balanced lifestyle lowers the chances of developing diabetes, heart disease,
+                                            and obesity.</li>
+                                        <li class="list-group-item"><strong>Enhanced physical performance:</strong>
+                                            Energy and stamina improve, making daily tasks and sports easier and more
+                                            enjoyable.</li>
+                                        <li class="list-group-item"><strong>Longer and healthier life:</strong>
+                                            Consistent healthy choices add quality years to life, supporting
+                                            independence and vitality even in old age.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Daily Habits -->
+                            <div class="card mb-4">
+                                <div class="card-header text-dark bg-ygreen">
+                                    <h4 class="mb-0">Healthy Habits to Practice Daily</h4>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>Eat fruits and vegetables:</strong> These
+                                            provide essential vitamins, minerals, and fiber that protect the body from
+                                            diseases.</li>
+                                        <li class="list-group-item"><strong>Drink enough water:</strong> Staying
+                                            hydrated helps regulate body temperature, improves digestion, and prevents
+                                            fatigue.</li>
+                                        <li class="list-group-item"><strong>Get 7–9 hours of sleep:</strong> Adequate
+                                            sleep supports brain function, boosts mood, and restores energy levels.</li>
+                                        <li class="list-group-item"><strong>Exercise regularly:</strong> Engaging in at
+                                            least 30 minutes of moderate physical activity daily strengthens the body
+                                            and prevents weight gain.</li>
+                                        <li class="list-group-item"><strong>Practice mindfulness or relaxation:</strong>
+                                            Techniques such as meditation, journaling, or deep breathing help manage
+                                            stress.</li>
+                                        <li class="list-group-item"><strong>Stay socially connected:</strong> Healthy
+                                            relationships with family and friends provide emotional support and reduce
+                                            loneliness.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Lifestyle and Sports -->
+                            <div class="card">
+                                <div class="card-header text-dark bg-ygreen">
+                                    <h4 class="mb-0">Healthy Lifestyle and Sports</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p>
+                                        A healthy lifestyle creates the foundation for active participation in sports.
+                                        When individuals eat well, sleep properly, and stay fit, they improve their
+                                        endurance, strength, and concentration—qualities that are essential in sports
+                                        performance.
+                                        Sports, in turn, reinforce these habits by encouraging discipline, teamwork, and
+                                        perseverance.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </main>
+                    </div>
+                    <div class="tab-pane fade" id="tab4">
+                        <main class="main-content">
+                            <h1 class="content-title">Application of Safety Precaution</h1>
+
+                            <!-- Activity Instructions -->
+                            <div class="mb-3">
+                                <div class="">
+                                    <strong>Activity: “Safe and Healthy Checklist”</strong>
+                                </div>
+                                <div class="">
+                                    <p>
+                                        <strong>Instructions:</strong> Read each scenario carefully. Write the correct
+                                        safety precaution that should be practiced to maintain a healthy lifestyle.
+                                    </p>
+                                    <p class="text-muted">
+                                        <em>(Tagalog: Basahin nang mabuti ang bawat sitwasyon. Isulat ang tamang
+                                            pag-iingat na dapat gawin upang mapanatili ang malusog na pamumuhay.)</em>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Checklist Table -->
+                            <div class="">
+                                <div class="">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered align-middle">
+                                            <thead class="table-secondary">
+                                                <tr>
+                                                    <th scope="col">Scenario</th>
+                                                    <th scope="col">Safety Precaution</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Eating Fruits/Vegetables</td>
+                                                    <td><input type="text" class="form-control"
+                                                            placeholder="Enter safety precaution"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Doing Exercise</td>
+                                                    <td><input type="text" class="form-control"
+                                                            placeholder="Enter safety precaution"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sleeping and Resting</td>
+                                                    <td><input type="text" class="form-control"
+                                                            placeholder="Enter safety precaution"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Managing Stress</td>
+                                                    <td><input type="text" class="form-control"
+                                                            placeholder="Enter safety precaution"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Drinking Water</td>
+                                                    <td><input type="text" class="form-control"
+                                                            placeholder="Enter safety precaution"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Personal Hygiene</td>
+                                                    <td><input type="text" class="form-control"
+                                                            placeholder="Enter safety precaution"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <button type="button" class="btn w-100 text-white" id="btn-green">Submit
+                                        Answers</button>
+                                </div>
+                            </div>
+
+                        </main>
+                    </div>
+                    <div class="tab-pane fade" id="tab5">
+                        <main class="main-content">
+                            <h1 class="content-title">Fulfillment of Activity</h1>
+
+                            <!-- Instructions -->
+                            <strong>Activity: “My Healthy and Safe Daily Plan”</strong>
+                            <p>
+                                <strong>Instructions:</strong> Using the checklist you created in Part 1, design
+                                your one-day healthy lifestyle plan.
+                                Include your meals, exercise, sleep schedule, and stress-relief activity. Be
+                                sure to apply safety precautions in each.
+                            </p>
+                            <p class="text-muted">
+                                <em>(Panuto: Gamitin ang checklist na ginawa mo sa Bahagi 1 upang bumuo ng isang
+                                    planong pang-isang araw na malusog na pamumuhay.
+                                    Isama ang iyong pagkain, ehersisyo, oras ng pagtulog, at gawain para maibsan
+                                    ang stress.
+                                    Siguraduhin na may pag-iingat na kasama sa bawat isa.)</em>
+                            </p>
+                            <form>
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <label class="form-label"><strong>Meals:</strong></label>
+                                            <input type="text" class="form-control"
+                                                placeholder="Enter your planned meals">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label"><strong>Exercise:</strong></label>
+                                            <input type="text" class="form-control"
+                                                placeholder="Enter your planned exercise">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label"><strong>Sleep Schedule:</strong></label>
+                                            <input type="text" class="form-control"
+                                                placeholder="Enter your sleep schedule">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label"><strong>Stress-relief Activity:</strong></label>
+                                            <input type="text" class="form-control"
+                                                placeholder="Enter your stress-relief activity">
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+                                <button type="submit" class="btn w-100 text-white" id="btn-green">Submit
+                                    Answers</button>
+                            </form>
+                        </main>
+                    </div>
+                    <div class="tab-pane fade" id="tab6">
+                        <main class="main-content">
+                            <h1 class="content-title">Evaluating Learning</h1>
+
+                            <h4 class="mb-4">Quiz on Healthy Lifestyle</h4>
+
+                            <!-- Multiple Choice Section -->
+                            <div class="card mb-4">
+                                <div class="card-header bg-ygreen text-dark">
+                                    Multiple Choice (1–5)
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label class="form-label">1. A healthy lifestyle is mainly about:</label>
+                                            <div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q1" id="q1a"><label class="form-check-label" for="q1a">a)
+                                                        Avoiding illness only</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q1" id="q1b"><label class="form-check-label" for="q1b">b)
+                                                        Making conscious choices for overall well-being</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q1" id="q1c"><label class="form-check-label" for="q1c">c)
+                                                        Doing sports alone</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q1" id="q1d"><label class="form-check-label" for="q1d">d)
+                                                        Sleeping more than 12 hours daily</label></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">2. Which of the following is NOT a component of a
+                                                healthy lifestyle?</label>
+                                            <div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q2" id="q2a"><label class="form-check-label" for="q2a">a)
+                                                        Balanced diet</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q2" id="q2b"><label class="form-check-label" for="q2b">b)
+                                                        Regular physical activity</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q2" id="q2c"><label class="form-check-label" for="q2c">c)
+                                                        Stress management</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q2" id="q2d"><label class="form-check-label" for="q2d">d)
+                                                        Skipping meals</label></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">3. How many hours of sleep are recommended for
+                                                most people to stay healthy?</label>
+                                            <div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q3" id="q3a"><label class="form-check-label" for="q3a">a)
+                                                        4–5 hours</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q3" id="q3b"><label class="form-check-label" for="q3b">b)
+                                                        5–6 hours</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q3" id="q3c"><label class="form-check-label" for="q3c">c)
+                                                        7–9 hours</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q3" id="q3d"><label class="form-check-label" for="q3d">d)
+                                                        10–12 hours</label></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">4. Which benefit of a healthy lifestyle improves
+                                                focus and efficiency in work or study?</label>
+                                            <div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q4" id="q4a"><label class="form-check-label" for="q4a">a)
+                                                        Stronger immune system</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q4" id="q4b"><label class="form-check-label" for="q4b">b)
+                                                        Better focus and productivity</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q4" id="q4c"><label class="form-check-label" for="q4c">c)
+                                                        Improved mood and mental health</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q4" id="q4d"><label class="form-check-label" for="q4d">d)
+                                                        Enhanced physical performance</label></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">5. Which daily habit helps regulate body
+                                                temperature, improves digestion, and prevents fatigue?</label>
+                                            <div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q5" id="q5a"><label class="form-check-label" for="q5a">a)
+                                                        Exercising regularly</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q5" id="q5b"><label class="form-check-label" for="q5b">b)
+                                                        Drinking enough water</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q5" id="q5c"><label class="form-check-label" for="q5c">c)
+                                                        Sleeping more</label></div>
+                                                <div class="form-check"><input class="form-check-input" type="radio"
+                                                        name="q5" id="q5d"><label class="form-check-label" for="q5d">d)
+                                                        Eating more junk food</label></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- True or False Section -->
+                            <div class="card mb-4">
+                                <div class="card-header bg-ygreen text-dark">
+                                    True or False (6–8)
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <label class="form-label">6. Practicing good personal hygiene helps prevent
+                                            infections and diseases.</label>
+                                        <div>
+                                            <div class="form-check"><input class="form-check-input" type="radio"
+                                                    name="q6" id="q6t"><label class="form-check-label"
+                                                    for="q6t">True</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="radio"
+                                                    name="q6" id="q6f"><label class="form-check-label"
+                                                    for="q6f">False</label></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">7. Regular exercise has no effect on heart and muscle
+                                            strength.</label>
+                                        <div>
+                                            <div class="form-check"><input class="form-check-input" type="radio"
+                                                    name="q7" id="q7t"><label class="form-check-label"
+                                                    for="q7t">True</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="radio"
+                                                    name="q7" id="q7f"><label class="form-check-label"
+                                                    for="q7f">False</label></div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">8. Staying socially connected with family and friends
+                                            contributes to emotional well-being.</label>
+                                        <div>
+                                            <div class="form-check"><input class="form-check-input" type="radio"
+                                                    name="q8" id="q8t"><label class="form-check-label"
+                                                    for="q8t">True</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="radio"
+                                                    name="q8" id="q8f"><label class="form-check-label"
+                                                    for="q8f">False</label></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Short Answer Section -->
+                            <div class="card mb-4">
+                                <div class="card-header bg-ygreen text-dark">
+                                    Short Answer (9–10)
+                                </div>
+                                <div class="card-body">
+                                    <div class="mb-3">
+                                        <label class="form-label">9. Give two examples of harmful habits that should be
+                                            avoided to maintain a healthy lifestyle.</label>
+                                        <textarea class="form-control" rows="2"
+                                            placeholder="Write your answer here"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">10. How does a healthy lifestyle support sports
+                                            participation?</label>
+                                        <textarea class="form-control" rows="2"
+                                            placeholder="Write your answer here"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Submit -->
+                            <button type="submit" class="btn w-100 text-white" id="btn-green">Submit Quiz</button>
+                        </main>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <!-- <div class="col-lg-8 col-xl-8">
+                <div class="tab-content">
+                    <div class="container tab-pane active" id="tab1">
+                        
+                    </div>
+
+                    <div class="container tab-pane fade" id="tab2">
+                        
+                    </div>
+
+                    <div class="container tab-pane fade" id="tab3">
+                        
+                    </div>
+
+                    <div class="container tab-pane fade" id="tab4">
+                        
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
