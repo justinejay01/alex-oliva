@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson 3: Psychoactive Substances - Fitness for Lifelong Learning</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/lessons.css">
 </head>
 
@@ -54,7 +55,7 @@
                                 situations.</strong><em> (<strong>H8DD-IIIa-b-20</strong></em><strong>)</strong>
                         </li>
                     </ul>
-                    <h2 class="lesson-title">Lesson 1: Healthy Habits</h2>
+                    <h2 class="lesson-title">Lesson 3: Psychoactive Substances</h2>
                     <nav class="nav nav-tabs flex-column">
                         <a class="lesson-section active" data-bs-toggle="tab" href="#tab1">Establishing Lesson
                             Purpose</a>
@@ -87,226 +88,377 @@
 
                             </div>
 
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <tbody>
-                                        <tr>
-                                            <td><img src="img/lesson-3-1.png" alt="" srcset="" height="150px"></td>
-                                            <td><b>GRDSU</b></td>
-                                            <td><input class="form-control" type="text" name="lesson3-tab1-1" id="lesson3-tab1-1"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="img/lesson-3-2.jpg" alt="" srcset="" height="150px"></td>
-                                            <td><b>RDUG BUEAS</b></td>
-                                            <td><input class="form-control" type="text" name="lesson3-tab1-2" id="lesson3-tab1-2"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="img/lesson-3-3.jpg" alt="" srcset="" height="150px"></td>
-                                            <td><b>RUGD SUMIES</b></td>
-                                            <td><input class="form-control" type="text" name="lesson3-tab1-3" id="lesson3-tab1-3"></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img src="img/lesson-3-4.jpg" alt="" srcset="" height="150px"></td>
-                                            <td><b>GURD NEDCPEDEEND</b></td>
-                                            <td><input class="form-control" type="text" name="lesson3-tab1-4" id="lesson3-tab1-4"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                            <form id="matchForm" class="needs-validation" novalidate>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered align-middle">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="img/lesson-3-1.png" alt="" class="img-fluid"
+                                                        style="max-height:150px;">
+                                                </td>
+                                                <td class="text-center"><b id="words-1">GRDSU</b></td>
+                                                <td class="text-center">
+                                                    <i class="fa fa-check fa-3x d-none" id="correct-1"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-times fa-3x d-none" id="wrong-1"
+                                                        aria-hidden="true"></i>
+                                                    <input class="form-control" type="text" name="lesson3-tab1-1"
+                                                        id="lesson3-tab1-1">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="img/lesson-3-2.jpg" alt="" class="img-fluid"
+                                                        style="max-height:150px;">
+                                                </td>
+                                                <td class="text-center"><b id="words-2">RDUG BUEAS</b></td>
+                                                <td class="text-center">
+                                                    <i class="fa fa-check fa-3x d-none" id="correct-2"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-times fa-3x d-none" id="wrong-2"
+                                                        aria-hidden="true"></i>
+                                                    <input class="form-control" type="text" name="lesson3-tab1-2"
+                                                        id="lesson3-tab1-2">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="img/lesson-3-3.jpg" alt="" class="img-fluid"
+                                                        style="max-height:150px;">
+                                                </td>
+                                                <td class="text-center"><b id="words-3">RUGD SUMIES</b></td>
+                                                <td class="text-center">
+                                                    <i class="fa fa-check fa-3x d-none" id="correct-3"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-times fa-3x d-none" id="wrong-3"
+                                                        aria-hidden="true"></i>
+                                                    <input class="form-control" type="text" name="lesson3-tab1-3"
+                                                        id="lesson3-tab1-3">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <img src="img/lesson-3-4.jpg" alt="" class="img-fluid"
+                                                        style="max-height:150px;">
+                                                </td>
+                                                <td class="text-center"><b id="words-4">GURD NEDCPEDEEND</b></td>
+                                                <td class="text-center">
+                                                    <i class="fa fa-check fa-3x d-none" id="correct-4"
+                                                        aria-hidden="true"></i>
+                                                    <i class="fa fa-times fa-3x d-none" id="wrong-4"
+                                                        aria-hidden="true"></i>
+                                                    <input class="form-control" type="text" name="lesson3-tab1-4"
+                                                        id="lesson3-tab1-4">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
 
-                            <input class="btn btn-primary w-100" type="submit" value="Submit">
+                                <input id="btn-submit" class="btn btn-primary w-100" type="submit" value="Submit">
+
+                            </form>
 
                         </main>
                     </div>
+
                     <div class="tab-pane fade" id="tab2">
                         <main class="main-content">
                             <h1 class="content-title">Introducing Content</h1>
 
-                            <!-- Activity A -->
-                            <div class="mb-2">
-                                <div class="">
-                                    <strong>A. Activity: “Complete the Table”</strong>
-                                </div>
-                                <div class="">
-                                    <p>Instructions: Fill in the table below by writing the habit mentioned in the
-                                        riddles and its importance to health.</p>
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered align-middle">
-                                            <thead class="table-secondary">
-                                                <tr>
-                                                    <th scope="col">Riddle No.</th>
-                                                    <th scope="col">Healthy Habit</th>
-                                                    <th scope="col">Why is it important?</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Eating Fruits (Apple)</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>Drinking Water</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>Sleeping Enough</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4</td>
-                                                    <td>Exercising</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>5</td>
-                                                    <td>Managing Stress</td>
-                                                    <td></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
+                            <h5 class="fw-bold">Understanding Key Terms</h5>
+                            <p><strong>Instructions:</strong> In the previous activity, you arranged jumbled letters to
+                                form important words related to our lesson. To deepen your understanding of these terms,
+                                read each definition carefully and identify the correct term that matches it. Write the
+                                letter of your chosen answer in your notebook.<br>
+                                (Sa nakaraang aktibidad, inayos ninyo ang magkakagulong letra upang mabuo ang
+                                mahahalagang salita na may kaugnayan sa ating aralin. Upang mas mapalalim ang inyong
+                                pag-unawa sa mga salitang ito, basahin nang mabuti ang bawat kahulugan at tukuyin ang
+                                tamang salita na tumutugma rito. Isulat ang titik ng inyong napiling sagot sa inyong
+                                kuwaderno.)
+                            </p>
 
-                            <!-- Activity B -->
-                            <div class="mb-3">
-                                <div class="">
-                                    <strong>B. Activity: “Rank the Habits”</strong>
-                                </div>
-                                <div class="">
-                                    <p>Instructions: Rank the five habits from 1 (most important for you right now) to 5
-                                        (least important for you right now). After ranking, write 2–3 sentences
-                                        explaining why you chose your top habit.</p>
-                                </div>
-                            </div>
+                            <ol class="mt-4">
+
+                                <li class="mb-3">
+                                    What is referred to as the utilization of a substance for purposes other than
+                                    medicinal use, which can cause organ damage such as brain and liver impairment,
+                                    addiction, and behavioral problems?<br>
+                                    A. Drugs &nbsp;&nbsp;&nbsp; B. Drugs Abused &nbsp;&nbsp;&nbsp; C. Drug Dependence
+                                    &nbsp;&nbsp;&nbsp; D. Drug Misuse
+                                </li>
+
+                                <li class="mb-3">
+                                    Which term refers to the condition characterized by physiological, behavioral, and
+                                    cognitive manifestations where substance use becomes a central focus, resulting in a
+                                    strong urge to consume the substance?<br>
+                                    A. Drugs &nbsp;&nbsp;&nbsp; B. Drugs Abused &nbsp;&nbsp;&nbsp; C. Drug Dependence
+                                    &nbsp;&nbsp;&nbsp; D. Drug Misuse
+                                </li>
+
+                                <li class="mb-3">
+                                    What do you call the improper use of a substance that deviates from the prescribed
+                                    dosage or recommended frequency, often leading to inappropriate consumption
+                                    patterns?<br>
+                                    A. Drugs &nbsp;&nbsp;&nbsp; B. Drugs Abused &nbsp;&nbsp;&nbsp; C. Drug Dependence
+                                    &nbsp;&nbsp;&nbsp; D. Drug Misuse
+                                </li>
+
+                                <li class="mb-3">
+                                    What are substances or chemicals taken in various ways—such as through the nose,
+                                    mouth, skin, or veins—that cause psychological, emotional, and behavioral changes in
+                                    individuals?<br>
+                                    A. Drugs &nbsp;&nbsp;&nbsp; B. Drugs Abused &nbsp;&nbsp;&nbsp; C. Drug Dependence
+                                    &nbsp;&nbsp;&nbsp; D. Drug Misuse
+                                </li>
+
+                            </ol>
                         </main>
                     </div>
                     <div class="tab-pane fade" id="tab3">
                         <main class="main-content">
                             <h1 class="content-title">Developing Understanding</h1>
 
-                            <h2 class="text-center mb-5">Healthy Lifestyle</h2>
+                            <p><strong>Psychoactive Substances</strong> is commonly known as <strong>drugs</strong>,
+                                have long been part of human culture, influencing perception, mood, and behavior. These
+                                substances <strong>alter brain function</strong> and can be categorized into stimulants,
+                                depressants, hallucinogens, and opioids. While some are medically prescribed, others,
+                                like cocaine and heroin, are classified as drugs of abuse due to their addictive and
+                                harmful nature. Misuse can lead to addiction, mental health issues, and societal
+                                problems. Understanding these substances is crucial for promoting health and preventing
+                                substance abuse.</p>
 
-                            <!-- Introduction -->
-                            <div class="mb-4">
-                                <div class="">
-                                    <p class="lead">
-                                        A healthy lifestyle refers to making conscious choices every day that contribute
-                                        to physical, mental, and emotional well-being.
-                                        It is not limited to avoiding illness but focuses on maintaining balance and
-                                        vitality in daily life.
-                                        This includes eating nutritious foods, staying physically active, having enough
-                                        sleep, and practicing stress management.
-                                        By adopting healthy habits, individuals can improve their overall quality of
-                                        life and prevent long-term health risks.
-                                    </p>
-                                </div>
-                            </div>
+                            <h3 class="drug-type"><strong>TYPES OF PSYCHOACTIVE DRUGS</strong></h3>
 
-                            <!-- Components -->
-                            <div class="card mb-4">
-                                <div class="card-header text-dark bg-ygreen">
-                                    <h4 class="mb-0">Components of a Healthy Lifestyle</h4>
-                                </div>
-                                <div class="card-body">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><strong>Balanced diet and proper nutrition:</strong>
-                                            Eating a variety of foods rich in vitamins, minerals, and essential
-                                            nutrients helps fuel the body and supports growth and repair.</li>
-                                        <li class="list-group-item"><strong>Regular physical activity:</strong> Exercise
-                                            strengthens the heart, muscles, and bones while improving endurance,
-                                            flexibility, and coordination.</li>
-                                        <li class="list-group-item"><strong>Adequate sleep:</strong> Resting 7–9 hours
-                                            every night allows the body to recharge, supports memory, and enhances
-                                            concentration.</li>
-                                        <li class="list-group-item"><strong>Good personal hygiene:</strong> Proper
-                                            hygiene practices such as handwashing and dental care help prevent
-                                            infections and diseases.</li>
-                                        <li class="list-group-item"><strong>Stress management and relaxation:</strong>
-                                            Taking time for hobbies, meditation, or simple breathing exercises lowers
-                                            stress and improves emotional well-being.</li>
-                                        <li class="list-group-item"><strong>Avoiding harmful habits:</strong> Limiting
-                                            or avoiding smoking, excessive alcohol, and junk food reduces the risk of
-                                            chronic diseases.</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <img src="img/lesson-3-5.jpg" alt="" class="img-fluid"
+                                style="max-width: 150px; float: right;">
+                            <h4><strong>1. DEPRESSANTS</strong></h4>
+                            <p>These substances have a <strong>calming effect on the brain</strong>, inducing
+                                <strong>drowsiness</strong> and <strong>relaxation</strong>. However, they may also
+                                trigger nightmares, anxiety, and aggression. Alcohol serves as a prominent example of a
+                                depressant.
+                            </p>
 
-                            <!-- Benefits -->
-                            <div class="card mb-4">
-                                <div class="card-header text-dark bg-ygreen">
-                                    <h4 class="mb-0">Benefits of a Healthy Lifestyle</h4>
-                                </div>
-                                <div class="card-body">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><strong>Stronger immune system:</strong> Healthy
-                                            eating and exercise boost the body’s defense against illnesses.</li>
-                                        <li class="list-group-item"><strong>Better focus and productivity:</strong>
-                                            Proper rest and nutrition improve mental clarity and efficiency in studies
-                                            and work.</li>
-                                        <li class="list-group-item"><strong>Improved mood and mental health:</strong>
-                                            Exercise and good sleep reduce anxiety and depression while promoting
-                                            positive feelings.</li>
-                                        <li class="list-group-item"><strong>Reduced risk of chronic diseases:</strong> A
-                                            balanced lifestyle lowers the chances of developing diabetes, heart disease,
-                                            and obesity.</li>
-                                        <li class="list-group-item"><strong>Enhanced physical performance:</strong>
-                                            Energy and stamina improve, making daily tasks and sports easier and more
-                                            enjoyable.</li>
-                                        <li class="list-group-item"><strong>Longer and healthier life:</strong>
-                                            Consistent healthy choices add quality years to life, supporting
-                                            independence and vitality even in old age.</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <ul>
+                                <li><strong>Alcohol:</strong> A widely consumed depressant.</li>
+                                <li><strong>Benzodiazepines:</strong> Prescription drugs like Xanax (alprazolam) used to
+                                    treat anxiety.</li>
+                                <li><strong>Barbiturates:</strong> A class of drugs that can be used as sedatives or
+                                    anesthetics.</li>
+                                <li><strong>Opioids:</strong> A group of drugs that includes both illegal substances
+                                    like heroin and prescription pain relievers like oxycodone.</li>
+                            </ul>
 
-                            <!-- Daily Habits -->
-                            <div class="card mb-4">
-                                <div class="card-header text-dark bg-ygreen">
-                                    <h4 class="mb-0">Healthy Habits to Practice Daily</h4>
-                                </div>
-                                <div class="card-body">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><strong>Eat fruits and vegetables:</strong> These
-                                            provide essential vitamins, minerals, and fiber that protect the body from
-                                            diseases.</li>
-                                        <li class="list-group-item"><strong>Drink enough water:</strong> Staying
-                                            hydrated helps regulate body temperature, improves digestion, and prevents
-                                            fatigue.</li>
-                                        <li class="list-group-item"><strong>Get 7–9 hours of sleep:</strong> Adequate
-                                            sleep supports brain function, boosts mood, and restores energy levels.</li>
-                                        <li class="list-group-item"><strong>Exercise regularly:</strong> Engaging in at
-                                            least 30 minutes of moderate physical activity daily strengthens the body
-                                            and prevents weight gain.</li>
-                                        <li class="list-group-item"><strong>Practice mindfulness or relaxation:</strong>
-                                            Techniques such as meditation, journaling, or deep breathing help manage
-                                            stress.</li>
-                                        <li class="list-group-item"><strong>Stay socially connected:</strong> Healthy
-                                            relationships with family and friends provide emotional support and reduce
-                                            loneliness.</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <img src="img/lesson-3-6.jpg" alt="" class="img-fluid"
+                                style="max-width: 150px; float: right;">
+                            <h4><strong>2. STIMULANTS</strong></h4>
+                            <p>This category encompasses substances like <strong>cocaine</strong> and
+                                <strong>caffeine</strong>, which <strong>boost energy</strong>,
+                                <strong>alertness</strong>, and <strong>wakefulness</strong>.
+                            </p>
 
-                            <!-- Lifestyle and Sports -->
-                            <div class="card">
-                                <div class="card-header text-dark bg-ygreen">
-                                    <h4 class="mb-0">Healthy Lifestyle and Sports</h4>
-                                </div>
-                                <div class="card-body">
-                                    <p>
-                                        A healthy lifestyle creates the foundation for active participation in sports.
-                                        When individuals eat well, sleep properly, and stay fit, they improve their
-                                        endurance, strength, and concentration—qualities that are essential in sports
-                                        performance.
-                                        Sports, in turn, reinforce these habits by encouraging discipline, teamwork, and
-                                        perseverance.
-                                    </p>
-                                </div>
-                            </div>
+                            <ul>
+                                <li><strong>Caffeine:</strong> The most widely consumed stimulant globally, found in
+                                    coffee, tea, chocolate, and energy drinks, primarily used for wakefulness and
+                                    increased alertness.</li>
+                                <li><strong>Nicotine:</strong> The primary active ingredient in tobacco products
+                                    (cigarettes, vapes), known for both stimulant and relaxant effects and high
+                                    addictive potential.</li>
+                                <li><strong>Cocaine:</strong> A powerful, highly addictive illicit drug derived from the
+                                    coca plant, known for producing intense, short-lived euphoria. It has limited
+                                    medical use as a local anesthetic in specific surgical procedures.</li>
+                                <li><strong>Methamphetamine:</strong> A very strong, highly addictive synthetic drug
+                                    (both illegal and very rarely prescribed as Desoxyn) that can cause significant
+                                    damage to the brain and body with long-term use.</li>
+                            </ul>
+
+                            <img src="img/lesson-3-7.jpg" alt="" class="img-fluid"
+                                style="max-width: 150px; float: right;">
+                            <h4><strong>3. OPIATES</strong></h4>
+                            <p>These drugs, known for their <strong>pain-relieving properties</strong>, induce
+                                <strong>feelings of happiness</strong> or <strong>euphoria</strong> while
+                                <strong>producing a sedative effect</strong>.
+                            </p>
+
+                            <p>Misuse can lead to addiction. Examples include heroin.</p>
+
+                            <ul>
+                                <li><strong>Oxycodone</strong></li>
+                                <li><strong>Oxymorphone</strong></li>
+                                <li><strong>Hydrocodone</strong></li>
+                                <li><strong>Hydromorphone</strong></li>
+                                <li><strong>Fentanyl</strong></li>
+                                <li><strong>Morphine</strong></li>
+                                <li><strong>Codeine</strong></li>
+                                <li><strong>Methadone</strong></li>
+                                <li><strong>Tramadol</strong></li>
+                                <li><strong>Buprenorphine</strong></li>
+                            </ul>
+
+                            <img src="img/lesson-3-8.jpg" alt="" class="img-fluid"
+                                style="max-width: 150px; float: right;">
+                            <h4><strong>4. HALLUCINOGENS</strong></h4>
+                            <p>These substances provoke hallucinations, altering perception to the extent of seeing or
+                                hearing things that aren't present. They may also distort time perception, induce a
+                                sense of detachment from surroundings, or evoke profound insights. LSD is a notable
+                                example of a hallucinogen.</p>
+
+                            <ul>
+                                <li><strong>LSD (Lysergic acid diethylamide):</strong> A potent synthetic chemical
+                                    derived from ergot, a fungus that grows on rye and other grains. It is typically
+                                    found on blotter paper, in tablets, or in liquid form.</li>
+                                <li><strong>Psilocybin:</strong> The psychoactive compound found in certain species of
+                                    "magic mushrooms." The mushrooms are usually eaten raw, cooked, or brewed into a
+                                    tea.</li>
+                                <li><strong>Peyote (Mescaline):</strong> A small, spineless cactus whose main active
+                                    ingredient is mescaline. The disk-shaped "buttons" from the cactus crown are usually
+                                    chewed or soaked in water to produce an intoxicating liquid.</li>
+                                <li><strong>DMT (Dimethyltryptamine):</strong> A naturally occurring chemical in some
+                                    plants, which can also be human-made. It is often consumed as an Amazonian brew
+                                    called ayahuasca, or as a white powder that is smoked.</li>
+                            </ul>
+
+                            <h3 class="section-title mt-5"><strong>General Adverse Effects of Substance Use (Short-Term
+                                    and Long Term) On the Person, Family, School, and the Community</strong></h3>
+
+                            <img src="img/lesson-3-9.png" alt="" class="img-fluid"
+                                style="max-width: 150px; float: right;">
+                            <h4 class="effect-category"><strong>EFFECTS OF SUBSTANCE USE ON THE PERSON -
+                                    SHORT-TERM</strong></h4>
+                            <ul>
+                                <li>Cognitive impairment and memory problems</li>
+                                <li>Physical health risks (nausea, vomiting, dehydration)</li>
+                                <li>Impaired judgment and decision-making</li>
+                                <li>Increased risk-taking behavior</li>
+                                <li>Accidents and injuries (falls, motor vehicle accidents)</li>
+                                <li>Risk of overdose and poisoning</li>
+                            </ul>
+
+                            <img src="img/lesson-3-10.png" alt="" class="img-fluid"
+                                style="max-width: 150px; float: left;">
+                            <h4 class="effect-category"><strong>EFFECTS OF SUBSTANCE USE ON THE PERSON -
+                                    LONG-TERM</strong></h4>
+                            <ul>
+                                <li>Mental health disorders (depression, anxiety, psychosis)</li>
+                                <li>Chronic health problems (liver disease, cardiovascular issues)</li>
+                                <li>Development of substance dependence or addiction</li>
+                                <li>Cognitive decline and impairment</li>
+                                <li>Legal consequences (criminal record, incarceration)</li>
+                            </ul>
+
+                            <img src="img/lesson-3-11.png" alt="" class="img-fluid"
+                                style="max-width: 150px; float: right;">
+                            <h4 class="effect-category"><strong>EFFECTS OF SUBSTANCE USE ON THE FAMILY -
+                                    SHORT-TERM</strong></h4>
+                            <ul>
+                                <li>Neglect of family responsibilities (childcare, household duties)</li>
+                                <li>Emotional distress and instability</li>
+                                <li>Strained relationships and conflicts</li>
+                                <li>Financial strain due to substance-related expenses</li>
+                                <li>Feelings of shame, guilt, and embarrassment</li>
+                                <li>Increased risk of domestic violence and abuse</li>
+                            </ul>
+
+                            <img src="img/lesson-3-12.png" alt="" class="img-fluid"
+                                style="max-width: 150px; float: left;">
+                            <h4 class="effect-category"><strong>EFFECTS OF SUBSTANCE USE ON THE FAMILY -
+                                    LONG-TERM</strong></h4>
+                            <ul>
+                                <li>Financial instability and poverty</li>
+                                <li>Intergenerational transmission of substance uses disorders</li>
+                                <li>Breakdown of family relationships and estrangement</li>
+                                <li>Emotional trauma and psychological scars</li>
+                                <li>Loss of trust and communication</li>
+                            </ul>
+
+                            <img src="img/lesson-3-13.png" alt="" class="img-fluid"
+                                style="max-width: 150px; float: right;">
+                            <h4 class="effect-category"><strong>EFFECTS OF SUBSTANCE USE ON THE SCHOOL -
+                                    SHORT-TERM</strong></h4>
+                            <ul>
+                                <li>Increased disciplinary actions and suspensions</li>
+                                <li>Disruption of classroom dynamics and learning environments</li>
+                                <li>Decreased academic performance and attendance</li>
+                                <li>Difficulty concentrating and retaining information</li>
+                                <li>Peer influence and pressure to engage in substance use</li>
+                                <li>Risk of expulsion or dropout</li>
+                            </ul>
+
+                            <img src="img/lesson-3-14.png" alt="" class="img-fluid"
+                                style="max-width: 150px; float: left;">
+                            <h4 class="effect-category"><strong>EFFECTS OF SUBSTANCE USE ON THE SCHOOL -
+                                    LONG-TERM</strong></h4>
+                            <ul>
+                                <li>Disengagement from school and educational goals</li>
+                                <li>Increased risk of involvement in delinquent activities</li>
+                                <li>Persistent academic underachievement and dropout</li>
+                                <li>Reduced opportunities for future success and employment</li>
+                                <li>Impact on school reputation and community perception</li>
+                            </ul>
+
+                            <h4 class="effect-category"><strong>EFFECTS OF SUBSTANCE USE ON THE COMMUNITY -
+                                    SHORT-TERM</strong></h4>
+                            <ul>
+                                <li>Crime and antisocial behavior (theft, vandalism)</li>
+                                <li>Increased burden on healthcare and emergency services</li>
+                                <li>Public health concerns (spread of infectious diseases through needle sharing)</li>
+                                <li>Environmental impacts (littering, pollution from drug production)</li>
+                                <li>Social stigma and discrimination against individuals with substance use disorders
+                                </li>
+                                <li>Decreased community cohesion and trust</li>
+                            </ul>
+
+                            <img src="img/lesson-3-16.png" alt="" class="img-fluid"
+                                style="max-width: 150px; float: left;">
+                            <h4 class="effect-category"><strong>EFFECTS OF SUBSTANCE USE ON THE COMMUNITY -
+                                    LONG-TERM</strong></h4>
+                            <ul>
+                                <li>Social inequalities and disparities in access to resources</li>
+                                <li>Disruption of community safety and security</li>
+                                <li>Economic burden from healthcare costs and social services</li>
+                                <li>Deterioration of neighborhood environments and property values</li>
+                                <li>Strain on community resources and support systems</li>
+                                <li>Negative portrayal in media leading to stigma and discrimination</li>
+                            </ul>
+
+                            <h3 class="section-title mt-5"><strong>Preventive Measures Against Substance Use and
+                                    Abuse</strong></h3>
+                            <p><strong>(Emphasize Non-Use as the Norm)</strong></p>
+
+                            <p>Preventing substance abuse may not have a guaranteed formula, but there are steps
+                                everyone can take to reduce its chances. Here are five simple ways to do it:</p>
+
+                            <img src="img/lesson-3-17.png" alt="" class="img-fluid"
+                                style="max-width: 150px; float: right;">
+                            <h4 class="mt-4"><strong>PREVENTIVE MEASURES AGAINST SUBSTANCE USE</strong></h4>
+
+                            <p><strong>Know How Substance Abuse Starts -</strong> It often begins with using addictive
+                                drugs for fun, always seeking to get high, or misusing prescription meds.</p>
+
+                            <img src="img/lesson-3-18.png" alt="" class="img-fluid"
+                                style="max-width: 150px; float: left;">
+                            <p><strong>Avoid Peer Pressure-</strong> Stay away from friends or family who push you to
+                                use drugs. If you're around people who do drugs, you might be tempted. Learning to say
+                                no firmly and planning ahead can help.</p>
+
+                            <img src="img/lesson-3-19.png" alt="" class="img-fluid"
+                                style="max-width: 150px; float: right;">
+                            <p><strong>Get Help for Mental Health-</strong> If you're struggling with anxiety,
+                                depression, or trauma, talk to a therapist. They can teach you healthy ways to cope
+                                without turning to drugs.</p>
+
+                            <img src="img/lesson-3-20.png" alt="" class="img-fluid"
+                                style="max-width: 150px; float: left;">
+                            <p><strong>Understand Your Risks-</strong> If addiction runs in your family or if you're
+                                exposed to certain environments, you might be at higher risk. Knowing these factors can
+                                help you make better choices.</p>
+
+                            <img src="img/lesson-3-21.png" alt="" class="img-fluid"
+                                style="max-width: 150px; float: right;">
+                            <p><strong>Keep a Balanced Life</strong>- Find healthy ways to manage stress and fill any
+                                gaps in your life. When you have good ways to cope, you're less likely to turn to drugs
+                                or alcohol for relief.</p>
 
 
                         </main>
@@ -315,63 +467,108 @@
                         <main class="main-content">
                             <h1 class="content-title">Application of Safety Precaution</h1>
 
-                            <!-- Activity Instructions -->
-                            <div class="mb-3">
-                                <div class="">
-                                    <strong>Activity: “Safe and Healthy Checklist”</strong>
-                                </div>
-                                <div class="">
-                                    <p>
-                                        <strong>Instructions:</strong> Read each scenario carefully. Write the correct
-                                        safety precaution that should be practiced to maintain a healthy lifestyle.
-                                    </p>
-                                    <p class="text-muted">
-                                        <em>(Tagalog: Basahin nang mabuti ang bawat sitwasyon. Isulat ang tamang
-                                            pag-iingat na dapat gawin upang mapanatili ang malusog na pamumuhay.)</em>
-                                    </p>
-                                </div>
+                            <h4><strong>Identifying Safety Risks and Precautions</strong></h4>
+
+                            <p><strong>Instructions:</strong> Below are different situations where substance use may
+                                pose a risk. Using what you learned about the effects of psychoactive substances and the
+                                preventive measures against substance use, identify the possible risk and the safety
+                                precaution you should take. Write your answers in the spaces provided.</p>
+
+                            <p><strong>(Panuto:</strong> Nasa ibaba ang iba't ibang sitwasyon kung saan maaaring
+                                magkaroon ng panganib ang paggamit ng ipinagbabawal o mapanganib na sangkap. Gamit ang
+                                iyong natutunan tungkol sa mga epekto ng psychoactive substances at mga hakbang sa
+                                pag-iwas sa paggamit ng mga ito, tukuyin ang maaaring panganib at ang angkop na safety
+                                precaution na dapat mong gawin. Isulat ang iyong mga sagot sa mga puwang na nakalaan.)
+                            </p>
+
+                            <h5 class="mt-4"><strong>Example:</strong></h5>
+
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Situation</th>
+                                            <th>Possible Risk</th>
+                                            <th>Safety Precaution</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>You feel sad and tempted to take medicine without a prescription.</td>
+                                            <td>You might misuse medicine and harm your body.</td>
+                                            <td>Talk to a trusted adult or counselor and avoid taking medicine not
+                                                prescribed for you.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
 
-                            <!-- Checklist Table -->
-                            <div class="">
-                                <div class="">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered align-middle">
-                                            <thead class="table-secondary">
-                                                <tr>
-                                                    <th scope="col">Scenario</th>
-                                                    <th scope="col">Safety Precaution</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Eating Fruits/Vegetables</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Doing Exercise</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Sleeping and Resting</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Managing Stress</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Drinking Water</td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Personal Hygiene</td>
-                                                    <td></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+                            <h5 class="mt-4"><strong>Answer the following:</strong></h5>
+
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Situation</th>
+                                            <th>Possible Risk</th>
+                                            <th>Safety Precaution</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1. A stranger offers you an unknown substance.</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2. You are surrounded by peers who are vaping.</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3. You feel overwhelmed with school tasks.</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4. A classmate pressures you to drink alcohol during a school event.
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5. You find prescription medication at home that is not yours.</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6. You are invited to a party where illegal drugs may be present.</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>7. You see an older teen using drugs near your neighborhood.</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>8. You witness a friend showing signs of substance misuse.</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>9. You encounter online ads promoting unlabeled "energy pills."</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>10. Your family is stressed, and you feel tempted to use harmful
+                                                substances.</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
 
                         </main>
@@ -380,129 +577,167 @@
                         <main class="main-content">
                             <h1 class="content-title">Fulfillment of Activity</h1>
 
-                            <!-- Instructions -->
-                            <strong>Activity: “My Healthy and Safe Daily Plan”</strong>
-                            <p>
-                                <strong>Instructions:</strong> Using the checklist you created in Part 1, design
-                                your one-day healthy lifestyle plan.
-                                Include your meals, exercise, sleep schedule, and stress-relief activity. Be
-                                sure to apply safety precautions in each.
-                            </p>
-                            <p class="text-muted">
-                                <em>(Panuto: Gamitin ang checklist na ginawa mo sa Bahagi 1 upang bumuo ng isang
-                                    planong pang-isang araw na malusog na pamumuhay.
-                                    Isama ang iyong pagkain, ehersisyo, oras ng pagtulog, at gawain para maibsan
-                                    ang stress.
-                                    Siguraduhin na may pag-iingat na kasama sa bawat isa.)</em>
-                            </p>
+                            <h4><strong>"Expressing Substance-Free Living"</strong></h4>
 
-                            <b class="mb-3">My Healthy and Safe Daily Plan</b>
+                            <p><strong>Instructions:</strong> Using a short bond paper, create a slogan promoting a
+                                substance-free living. Incorporate visual elements such as colors, symbols, and images
+                                that represent substance-free living and prevention. Focus on both the visual appeal and
+                                the message conveyed by your artistic slogans. Be guided based on the rubrics below.</p>
 
-                            <ul style="list-style-type: disc;">
-                                <li class="bullet"><strong>Meals:</strong>
-                                </li>
-                                <li class="bullet"><strong>Exercise:</strong>
-                                </li>
-                                <li class="bullet"><strong>Sleep Schedule:</strong>
-                                </li>
-                                <li class="bullet"><strong>Stress-relief Activity:</strong>
-                                </li>
-                            </ul>
+                            <p><strong>(Panuto:</strong> Para sa gawaing ito, kailangang gamitin ang isang short bond
+                                paper upang makabuo ng isang slogan na nagtataguyod ng pamumuhay na malaya sa bawal na
+                                gamot (substance-free living). Dapat isama ang iba't ibang elemento ng sining tulad ng
+                                kulay, simbolo, at larawan na tiyak na kumakatawan sa pag-iwas at pagtataguyod ng
+                                malusog na pamumuhay. Higit sa lahat, mahalagang pagtuunan ng pansin ang pagiging
+                                kaakit-akit (visual appeal) ng inyong disenyo at kasabay nito ang kalinawan at lakas ng
+                                mensaheng nais iparating ng inyong slogan. Ang inyong likha ay mamarkahan batay sa
+                                rubrics na ibinigay, kaya't tiyakin na ang inyong gawa ay mataas sa pagkamalikhain,
+                                kaugnayan sa tema, at epektibong pag-uugnay ng teksto at sining.)</p>
 
-                            <b class="mt-5">References: </b>
-                            <p style="color: rgba(0, 0, 0, 0.5);">
-                                <i>
-                                    World Health Organization (WHO). (2020). Healthy diet. https://www.who.int<br>
-                                    Centers for Disease Control and Prevention (CDC). (2021). Benefits of Physical
-                                    Activity. https://www.cdc.gov<br>
-                                    National Sleep Foundation. (2021). How much sleep do we really need?
-                                    https://www.sleepfoundation.org<br>
-                                    American Heart Association (AHA). (2020). Healthy Living. https://www.heart.org<br>
-                                    Mayo Clinic. (2021). Stress management. https://www.mayoclinic.org
-                                </i>
-                            </p>
+                            <div class="table-responsive mt-4">
+                                <table class="table table-bordered">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Criteria</th>
+                                            <th>Excellent<br>(5 Points)</th>
+                                            <th>Good<br>(4 Points)</th>
+                                            <th>Fair<br>(3 Points)</th>
+                                            <th>Needs Improvement<br>(1-2 Points)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>I. Message Clarity & Relevance</strong></td>
+                                            <td>Message is exceptionally clear, concise, and highly persuasive. Directly
+                                                and strongly promotes a substance-free lifestyle.</td>
+                                            <td>Message is clear and easily understood, and is very relevant to the
+                                                theme.</td>
+                                            <td>Message is somewhat unclear or vague, with only moderate relevance to
+                                                the theme.</td>
+                                            <td>Message is unclear and lacks relevance to the theme.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>II. Artistry & Creativity (Visual Appeal & Creativity)</strong>
+                                            </td>
+                                            <td>Visually striking and highly appealing presentation. Slogan is extremely
+                                                original and creative.</td>
+                                            <td>Appealing and well-presented design. Slogan is original and creative.
+                                            </td>
+                                            <td>Design is moderately appealing. Slogan shows limited originality or
+                                                creativity.</td>
+                                            <td>Design is unattractive and lacks creativity.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>III. Integration & Presentation (Visual Integration & Overall
+                                                    Polish)</strong></td>
+                                            <td><strong>Effective integration</strong> of all visual elements (colors,
+                                                symbols, images) to powerfully enhance the message. Presentation is
+                                                polished and professional.</td>
+                                            <td>Visual elements support the message. Presentation is neat and organized
+                                                overall.</td>
+                                            <td>Visual elements are poorly integrated and do not enhance the message
+                                                much. Presentation lacks polish.</td>
+                                            <td>Poor integration of visuals and message. Presentation is disorganized
+                                                and sloppy.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h3 class="section-title mt-5"><strong>References</strong></h3>
+                            <p class="fst-italic">https://www.canva.com/posters/templates/drug-free/</p>
+
                         </main>
                     </div>
                     <div class="tab-pane fade" id="tab6">
                         <main class="main-content">
                             <h1 class="content-title">Evaluating Learning</h1>
 
-                            <h4 class="mb-4">Quiz on Healthy Lifestyle</h4>
+                            <p><strong>Instructions:</strong> Read each item carefully and choose the letter of the
+                                correct answer. Write your answers in your notebook.</p>
 
-                            <strong>Multiple Choice (1–5)</strong>
-                            <ol>
-                                <li>
-                                    A healthy lifestyle is mainly about:
-                                    <ol type="A">
-                                        <li>Avoiding illness only</li>
-                                        <li>Making conscious choices for overall well-being</li>
-                                        <li>Doing sports alone</li>
-                                        <li>Sleeping more than 12 hours daily</li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    Which of the following is NOT a component of a healthy lifestyle?
-                                    <ol type="A">
-                                        <li>Balanced diet</li>
-                                        <li>Regular physical activity</li>
-                                        <li>Stress management</li>
-                                        <li>Skipping meals</li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    How many hours of sleep are recommended for most people to stay healthy?
-                                    <ol type="A">
-                                        <li>4–5 hours</li>
-                                        <li>5–6 hours</li>
-                                        <li>7–9 hours</li>
-                                        <li>10–12 hours</li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    Which benefit of a healthy lifestyle improves focus and efficiency in work or study?
-                                    <ol type="A">
-                                        <li>Stronger immune system</li>
-                                        <li>Better focus and productivity</li>
-                                        <li>Improved mood and mental health</li>
-                                        <li>Enhanced physical performance</li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    Which daily habit helps regulate body temperature, improves digestion, and prevents
-                                    fatigue?
-                                    <ol type="A">
-                                        <li>Exercising regularly</li>
-                                        <li>Drinking enough water</li>
-                                        <li>Sleeping more</li>
-                                        <li>Eating more junk food</li>
-                                    </ol>
-                                </li>
-                            </ol>
+                            <div class="mt-4">
+                                <p><strong>1.</strong> Which type of psychoactive substance slows down brain activity
+                                    and can make a person feel relaxed or sleepy?<br>
+                                    <strong>A.</strong> Depressants<br>
+                                    <strong>B.</strong> Hallucinogens<br>
+                                    <strong>C.</strong> Opiates<br>
+                                    <strong>D.</strong> Stimulants
+                                </p>
 
-                            <strong>True or False (6–8)</strong>
-                            <ol start="6">
-                                <li>
-                                    Practicing good personal hygiene helps prevent infections and diseases.<br>
-                                </li>
-                                <li>
-                                    Regular exercise has no effect on heart and muscle strength.<br>
-                                </li>
-                                <li>
-                                    Staying socially connected with family and friends contributes to emotional
-                                    well-being.<br>
-                                </li>
-                            </ol>
+                                <p><strong>2.</strong> What do you call the use of a substance for purposes other than
+                                    medicinal use, which can lead to addiction and harmful effects?<br>
+                                    <strong>A.</strong> Drug abuse<br>
+                                    <strong>B.</strong> Drug dependence<br>
+                                    <strong>C.</strong> Drug misuse<br>
+                                    <strong>D.</strong> Drug tolerance
+                                </p>
 
-                            <strong>Short Answer (9–10)</strong>
-                            <ol start="9">
-                                <li>
-                                    Give two examples of harmful habits that should be avoided to maintain a healthy
-                                    lifestyle.<br>
-                                </li>
-                                <li>
-                                    How does a healthy lifestyle support sports participation?<br>
-                                </li>
-                            </ol>
+                                <p><strong>3.</strong> Which term refers to a strong urge or compelling desire to
+                                    continue using a substance, even when it causes harm?<br>
+                                    <strong>A.</strong> Drug dependence<br>
+                                    <strong>B.</strong> Drug intake<br>
+                                    <strong>C.</strong> Drug misuse<br>
+                                    <strong>D.</strong> Drug overdose
+                                </p>
+
+                                <p><strong>4.</strong> Which is a short-term effect of substance use on a person?<br>
+                                    <strong>A.</strong> Chronic liver disease<br>
+                                    <strong>B.</strong> Cognitive impairment<br>
+                                    <strong>C.</strong> Increased poverty<br>
+                                    <strong>D.</strong> Loss of family relationships
+                                </p>
+
+                                <p><strong>5.</strong> Which of the following is a preventive measure against substance
+                                    abuse?<br>
+                                    <strong>A.</strong> Avoiding peer pressure situations<br>
+                                    <strong>B.</strong> Joining groups that use drugs<br>
+                                    <strong>C.</strong> Keeping drug offers a secret<br>
+                                    <strong>D.</strong> Trying drugs when stressed
+                                </p>
+
+                                <p><strong>6.</strong> Your friend invites you to vape 'just once' during lunch break.
+                                    What is the BEST decision?<br>
+                                    <strong>A.</strong> Ignore the risks and try it<br>
+                                    <strong>B.</strong> Firmly refuse and walk away<br>
+                                    <strong>C.</strong> Say yes to maintain the friendship<br>
+                                    <strong>D.</strong> Try it but only for a few seconds
+                                </p>
+
+                                <p><strong>7.</strong> You see a classmate taking pills that are not prescribed to him.
+                                    What should you do?<br>
+                                    <strong>A.</strong> Encourage him to take more<br>
+                                    <strong>B.</strong> Tell a trusted adult or teacher<br>
+                                    <strong>C.</strong> Try one to see what it feels like<br>
+                                    <strong>D.</strong> Record a video for fun
+                                </p>
+
+                                <p><strong>8.</strong> Which type of drug is known for causing hallucinations or seeing
+                                    things that are not real?<br>
+                                    <strong>A.</strong> Depressants<br>
+                                    <strong>B.</strong> Hallucinogens<br>
+                                    <strong>C.</strong> Pain relievers<br>
+                                    <strong>D.</strong> Stimulants
+                                </p>
+
+                                <p><strong>9.</strong> You're feeling overwhelmed with schoolwork and a classmate offers
+                                    you an "energy pill" from an online shop without labels. What is the safest
+                                    action?<br>
+                                    <strong>A.</strong> Accept it but save it for later<br>
+                                    <strong>B.</strong> Refuse and use healthy coping strategies<br>
+                                    <strong>C.</strong> Take it to finish your tasks faster<br>
+                                    <strong>D.</strong> Try half a pill only
+                                </p>
+
+                                <p><strong>10.</strong> Which long-term effect of substance use can negatively affect a
+                                    person's future opportunities and education?<br>
+                                    <strong>A.</strong> Better concentration<br>
+                                    <strong>B.</strong> Improved memory<br>
+                                    <strong>C.</strong> Persistent academic underachievement<br>
+                                    <strong>D.</strong> Stronger immune system
+                                </p>
+                            </div>
+
                         </main>
                     </div>
                 </div>
@@ -533,6 +768,70 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // The text you want to check against
+        const answer1 = "DRUGS";
+        const answer2 = "DRUG ABUSE";
+        const answer3 = "DRUG MISUSE";
+        const answer4 = "DRUG DEPENDENCE";
+
+        const form = document.getElementById("matchForm");
+        const input1 = document.getElementById("lesson3-tab1-1");
+        const input2 = document.getElementById("lesson3-tab1-2");
+        const input3 = document.getElementById("lesson3-tab1-3");
+        const input4 = document.getElementById("lesson3-tab1-4");
+
+        const correct1 = document.getElementById("correct-1");
+        const correct2 = document.getElementById("correct-2");
+        const correct3 = document.getElementById("correct-3");
+        const correct4 = document.getElementById("correct-4");
+
+        const wrong1 = document.getElementById("wrong-1");
+        const wrong2 = document.getElementById("wrong-2");
+        const wrong3 = document.getElementById("wrong-3");
+        const wrong4 = document.getElementById("wrong-4");
+
+        const submitbtn = document.getElementById("btn-submit");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            if (input1.value === answer1) {
+                correct1.classList.remove("d-none");
+                wrong1.classList.add("d-none");
+            } else {
+                wrong1.classList.remove("d-none");
+                correct1.classList.add("d-none");
+            }
+
+            if (input2.value === answer1) {
+                correct2.classList.remove("d-none");
+                wrong2.classList.add("d-none");
+            } else {
+                wrong2.classList.remove("d-none");
+                correct2.classList.add("d-none");
+            }
+
+            if (input3.value === answer1) {
+                correct3.classList.remove("d-none");
+                wrong3.classList.add("d-none");
+            } else {
+                wrong3.classList.remove("d-none");
+                correct3.classList.add("d-none");
+            }
+
+            if (input4.value === answer1) {
+                correct4.classList.remove("d-none");
+                wrong4.classList.add("d-none");
+            } else {
+                wrong4.classList.remove("d-none");
+                correct4.classList.add("d-none");
+            }
+
+            submitbtn.disabled = true;
+        });
+    </script>
 </body>
 
 </html>
