@@ -74,89 +74,92 @@
                         <main class="main-content">
                             <h1 class="content-title">Establishing Lesson Purpose</h1>
 
-                            <h3>Letter Mix-Up</h3>
-                            <div class="instructions">
-                                <strong>Instructions:</strong> Look carefully at the image provided in the module. Right
+                            <h4><strong>Letter Mix-Up</strong></h4>
+
+                            <p><strong>Instructions:</strong> Look carefully at the image provided in the module. Right
                                 beside the image, you will see a set of jumbled letters. Rearrange the letters and
-                                <b>TYPE ALL YOUR ANSWERS</b> in the box before pressing <b>SUBMIT</b>. Don’t forget to
-                                take a screenshot after completing the activity.
-                                <br>
-                                (<strong>Panuto:</strong> Tingnang mabuti ang larawan na nasa module. Sa gilid ng
-                                larawan, makikita mo ang mga magkahalong letra. Ayusin ang mga ito at <b>ITYPE LAHAT NG
-                                    SAGOT</b> sa kahon bago <b>i-SUBMIT</b>. Huwag kalimutang mag-screenshot pagkatapos
-                                sagutan ang gawain.)
+                                <strong>TYPE ALL YOUR ANSWERS</strong> in the box before pressing
+                                <strong>SUBMIT</strong>. Don't forget to take a screenshot after completing the
+                                activity.</p>
 
-                            </div>
+                            <p><strong>(Panuto:</strong> Tingnang mabuti ang larawan na nasa module. Sa gilid ng
+                                larawan, makikita mo ang mga magkahalong letra. Ayusin ang mga ito at ITYPE LAHAT NG
+                                SAGOT sa kahon bago i-SUBMIT. Huwag kalimutang mag-screenshot pagkatapos sagutan ang
+                                gawain.)</p>
 
-                            <form id="matchForm" class="needs-validation" novalidate>
+                            <div id="resultMessage" class="result-message"></div>
+                            
+                            <form id="letterMixupForm" class="mt-4">
                                 <div class="table-responsive">
-                                    <table class="table table-bordered align-middle">
+                                    <table class="table table-bordered">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Image</th>
+                                                <th>Jumbled Letters</th>
+                                                <th>Your Answer</th>
+                                            </tr>
+                                        </thead>
                                         <tbody>
                                             <tr>
-                                                <td>
-                                                    <img src="img/lesson-3-1.png" alt="" class="img-fluid"
-                                                        style="max-height:150px;">
+                                                <td class="image-cell">
+                                                    <img src="img/lesson-3-1.png" style="max-width: 150px;"
+                                                        alt="Drugs Image" class="img-fluid">
                                                 </td>
-                                                <td class="text-center"><b id="words-1">GRDSU</b></td>
-                                                <td class="text-center">
-                                                    <i class="fa fa-check fa-3x d-none" id="correct-1"
-                                                        aria-hidden="true"></i>
-                                                    <i class="fa fa-times fa-3x d-none" id="wrong-1"
-                                                        aria-hidden="true"></i>
-                                                    <input class="form-control" type="text" name="lesson3-tab1-1"
-                                                        id="lesson3-tab1-1">
+                                                <td class="jumbled-cell">GRDSU</td>
+                                                <td class="answer-cell">
+                                                    <input type="text" class="form-control" id="answer1"
+                                                        placeholder="Type your answer here"
+                                                        style="text-transform: uppercase;" required>
+
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>
-                                                    <img src="img/lesson-3-2.jpg" alt="" class="img-fluid"
-                                                        style="max-height:150px;">
+                                                <td class="image-cell">
+                                                    <img src="img/lesson-3-2.jpg" style="max-width: 150px;"
+                                                        alt="Drug Abuse Image" class="img-fluid">
                                                 </td>
-                                                <td class="text-center"><b id="words-2">RDUG BUEAS</b></td>
-                                                <td class="text-center">
-                                                    <i class="fa fa-check fa-3x d-none" id="correct-2"
-                                                        aria-hidden="true"></i>
-                                                    <i class="fa fa-times fa-3x d-none" id="wrong-2"
-                                                        aria-hidden="true"></i>
-                                                    <input class="form-control" type="text" name="lesson3-tab1-2"
-                                                        id="lesson3-tab1-2">
+                                                <td class="jumbled-cell">RDUG BUEAS</td>
+                                                <td class="answer-cell">
+                                                    <input type="text" class="form-control" id="answer2"
+                                                        placeholder="Type your answer here"
+                                                        style="text-transform: uppercase;" required>
+
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>
-                                                    <img src="img/lesson-3-3.jpg" alt="" class="img-fluid"
-                                                        style="max-height:150px;">
+                                                <td class="image-cell">
+                                                    <img src="img/lesson-3-3.jpg" style="max-width: 150px;"
+                                                        alt="Drug Misuse Image" class="img-fluid">
                                                 </td>
-                                                <td class="text-center"><b id="words-3">RUGD SUMIES</b></td>
-                                                <td class="text-center">
-                                                    <i class="fa fa-check fa-3x d-none" id="correct-3"
-                                                        aria-hidden="true"></i>
-                                                    <i class="fa fa-times fa-3x d-none" id="wrong-3"
-                                                        aria-hidden="true"></i>
-                                                    <input class="form-control" type="text" name="lesson3-tab1-3"
-                                                        id="lesson3-tab1-3">
+                                                <td class="jumbled-cell">RUGD SUMIES</td>
+                                                <td class="answer-cell">
+                                                    <input type="text" class="form-control" id="answer3"
+                                                        placeholder="Type your answer here"
+                                                        style="text-transform: uppercase;" required>
+
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>
-                                                    <img src="img/lesson-3-4.jpg" alt="" class="img-fluid"
-                                                        style="max-height:150px;">
+                                                <td class="image-cell">
+                                                    <img src="img/lesson-3-4.jpg" style="max-width: 150px;"
+                                                        alt="Drug Dependence Image" class="img-fluid">
                                                 </td>
-                                                <td class="text-center"><b id="words-4">GURD NEDCPEDEEND</b></td>
-                                                <td class="text-center">
-                                                    <i class="fa fa-check fa-3x d-none" id="correct-4"
-                                                        aria-hidden="true"></i>
-                                                    <i class="fa fa-times fa-3x d-none" id="wrong-4"
-                                                        aria-hidden="true"></i>
-                                                    <input class="form-control" type="text" name="lesson3-tab1-4"
-                                                        id="lesson3-tab1-4">
+                                                <td class="jumbled-cell">GURD NEDCPEDEEND</td>
+                                                <td class="answer-cell">
+                                                    <input type="text" class="form-control" id="answer4"
+                                                        placeholder="Type your answer here"
+                                                        style="text-transform: uppercase;" required>
+
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
 
-                                <input id="btn-submit" class="btn btn-primary w-100" type="submit" value="Submit">
+                                <div class="text-center mt-4">
+                                    <button type="submit" class="btn btn-primary btn-lg">SUBMIT</button>
+                                </div>
+
 
                             </form>
 
@@ -231,7 +234,7 @@
 
                             <h3 class="drug-type"><strong>TYPES OF PSYCHOACTIVE DRUGS</strong></h3>
 
-                            <img src="img/lesson-3-5.jpg" alt="" class="img-fluid"
+                            <img src="img/lesson-3-5.gif" alt="" class="img-fluid"
                                 style="max-width: 150px; float: right;">
                             <h4><strong>1. DEPRESSANTS</strong></h4>
                             <p>These substances have a <strong>calming effect on the brain</strong>, inducing
@@ -250,7 +253,7 @@
                                     like heroin and prescription pain relievers like oxycodone.</li>
                             </ul>
 
-                            <img src="img/lesson-3-6.jpg" alt="" class="img-fluid"
+                            <img src="img/lesson-3-6.gif" alt="" class="img-fluid"
                                 style="max-width: 150px; float: right;">
                             <h4><strong>2. STIMULANTS</strong></h4>
                             <p>This category encompasses substances like <strong>cocaine</strong> and
@@ -273,7 +276,7 @@
                                     damage to the brain and body with long-term use.</li>
                             </ul>
 
-                            <img src="img/lesson-3-7.jpg" alt="" class="img-fluid"
+                            <img src="img/lesson-3-7.gif" alt="" class="img-fluid"
                                 style="max-width: 150px; float: right;">
                             <h4><strong>3. OPIATES</strong></h4>
                             <p>These drugs, known for their <strong>pain-relieving properties</strong>, induce
@@ -296,7 +299,7 @@
                                 <li><strong>Buprenorphine</strong></li>
                             </ul>
 
-                            <img src="img/lesson-3-8.jpg" alt="" class="img-fluid"
+                            <img src="img/lesson-3-8.gif" alt="" class="img-fluid"
                                 style="max-width: 150px; float: right;">
                             <h4><strong>4. HALLUCINOGENS</strong></h4>
                             <p>These substances provoke hallucinations, altering perception to the extent of seeing or
@@ -770,67 +773,82 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        // The text you want to check against
-        const answer1 = "DRUGS";
-        const answer2 = "DRUG ABUSE";
-        const answer3 = "DRUG MISUSE";
-        const answer4 = "DRUG DEPENDENCE";
+        // Correct answers in capital letters
+        const correctAnswers = {
+            answer1: 'DRUGS',
+            answer2: 'DRUG ABUSE',
+            answer3: 'DRUG MISUSE',
+            answer4: 'DRUG DEPENDENCE'
+        };
 
-        const form = document.getElementById("matchForm");
-        const input1 = document.getElementById("lesson3-tab1-1");
-        const input2 = document.getElementById("lesson3-tab1-2");
-        const input3 = document.getElementById("lesson3-tab1-3");
-        const input4 = document.getElementById("lesson3-tab1-4");
+        // Get form element
+        const form = document.getElementById('letterMixupForm');
+        const resultMessage = document.getElementById('resultMessage');
 
-        const correct1 = document.getElementById("correct-1");
-        const correct2 = document.getElementById("correct-2");
-        const correct3 = document.getElementById("correct-3");
-        const correct4 = document.getElementById("correct-4");
-
-        const wrong1 = document.getElementById("wrong-1");
-        const wrong2 = document.getElementById("wrong-2");
-        const wrong3 = document.getElementById("wrong-3");
-        const wrong4 = document.getElementById("wrong-4");
-
-        const submitbtn = document.getElementById("btn-submit");
-
-        form.addEventListener("submit", function (event) {
+        // Add submit event listener
+        form.addEventListener('submit', function(event) {
             event.preventDefault();
+            event.stopPropagation();
 
-            if (input1.value === answer1) {
-                correct1.classList.remove("d-none");
-                wrong1.classList.add("d-none");
-            } else {
-                wrong1.classList.remove("d-none");
-                correct1.classList.add("d-none");
+            let allCorrect = true;
+            let correctCount = 0;
+            let hasEmptyFields = false;
+
+            // Check each answer
+            for (let i = 1; i <= 4; i++) {
+                const answerId = 'answer' + i;
+                const inputElement = document.getElementById(answerId);
+                const userAnswer = inputElement.value.trim().toUpperCase();
+                const correctAnswer = correctAnswers[answerId];
+
+                // Remove previous validation classes
+                inputElement.classList.remove('is-valid', 'is-invalid');
+
+                // Check if field is empty
+                if (userAnswer === '') {
+                    inputElement.classList.add('is-invalid');
+                    hasEmptyFields = true;
+                    allCorrect = false;
+                } 
+                // Check if answer is correct
+                else if (userAnswer === correctAnswer) {
+                    inputElement.classList.add('is-valid');
+                    correctCount++;
+                } else {
+                    inputElement.classList.add('is-invalid');
+                    allCorrect = false;
+                }
             }
 
-            if (input2.value === answer1) {
-                correct2.classList.remove("d-none");
-                wrong2.classList.add("d-none");
+            // Display result message
+            resultMessage.style.display = 'block';
+            
+            if (hasEmptyFields) {
+                resultMessage.className = 'result-message error';
+                resultMessage.innerHTML = '⚠️ Please fill in all answers before submitting.';
+            } else if (allCorrect) {
+                resultMessage.className = 'result-message success';
+                resultMessage.innerHTML = '🎉 Excellent! All answers are correct! (' + correctCount + '/4)';
             } else {
-                wrong2.classList.remove("d-none");
-                correct2.classList.add("d-none");
+                resultMessage.className = 'result-message error';
+                resultMessage.innerHTML = '❌ Some answers are incorrect. You got ' + correctCount + ' out of 4 correct. Please try again.';
             }
 
-            if (input3.value === answer1) {
-                correct3.classList.remove("d-none");
-                wrong3.classList.add("d-none");
-            } else {
-                wrong3.classList.remove("d-none");
-                correct3.classList.add("d-none");
-            }
-
-            if (input4.value === answer1) {
-                correct4.classList.remove("d-none");
-                wrong4.classList.add("d-none");
-            } else {
-                wrong4.classList.remove("d-none");
-                correct4.classList.add("d-none");
-            }
-
-            submitbtn.disabled = true;
+            // Scroll to result message
+            resultMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         });
+
+        // Optional: Real-time validation as user types
+        for (let i = 1; i <= 4; i++) {
+            const answerId = 'answer' + i;
+            const inputElement = document.getElementById(answerId);
+            
+            inputElement.addEventListener('input', function() {
+                // Remove validation classes when user starts typing
+                this.classList.remove('is-valid', 'is-invalid');
+                resultMessage.style.display = 'none';
+            });
+        }
     </script>
 </body>
 
